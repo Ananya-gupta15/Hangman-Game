@@ -155,9 +155,9 @@ class HangmanGame:
         y = (popup.winfo_screenheight() // 2) - (height // 2)
         popup.geometry(f"{width}x{height}+{x}+{y}")
 
-        popup.deiconify()  # Show popup after setup
+        popup.deiconify()   
 
-        popup.grab_set()   # Modal behavior
+        popup.grab_set()   
         popup.focus_set()
 
         label = tk.Label(popup, text=message, font=("Helvetica", 16, "bold"), bg="#f0f8ff", fg="#333333", wraplength=350)
